@@ -1,9 +1,5 @@
-﻿// Screen Sound
-string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-//List<string> ListaDasBandas = new List<string> { "U2", "The Beatles", "Calypso"};
+﻿string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-bandasRegistradas.Add("Linkin Park", new List<int> { 10, 8, 6 });
-bandasRegistradas.Add("The Beatles", new List<int>());
 
 void ExibirLogo()
 {
@@ -66,10 +62,6 @@ void MostrarBandasRegistradas()
 {
     Console.Clear();
     ExibirTituloDaOpcao("Exibindo todas as bandas registradas na nossa aplicação");
-    //for (int i = 0; i <ListaDasBandas.Count; i++)
-    //{
-    //    Console.WriteLine($"Banda: {ListaDasBandas[i]}");
-    //}
 
     foreach (string banda in bandasRegistradas.Keys)
     {
@@ -94,10 +86,6 @@ void ExibirTituloDaOpcao(string titulo)
 
 void AvaliarUmaBanda()
 {
-    //digite qual banda deseja avaliar
-    //se a banda existir no dicionário >> atribuir uma nota
-    //senão, volta ao menu principal
-
     Console.Clear();
     ExibirTituloDaOpcao("Avaliar banda");
     Console.Write("Digite o nome da banda que deseja avaliar: ");
